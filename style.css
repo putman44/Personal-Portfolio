@@ -15,11 +15,12 @@ h1 {
   display: flex;
   justify-content: space-between;
   padding: 1vh;
+  position: sticky;
+  top: 0px;
 }
 
 .navbar ul {
   list-style-type: none;
-
   padding: 0px;
   margin: 0px;
   display: flex;
@@ -34,6 +35,11 @@ h1 {
 
 .navbar a:hover {
   background-color: hsl(0, 0%, 54%);
+}
+
+.navbar #h1-link {
+  background-color: transparent;
+  padding: 0;
 }
 
 .about-img {
@@ -52,18 +58,20 @@ h1 {
   line-height: 2em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   .about-img {
     flex-direction: column;
     align-items: center;
   }
 
   #profile-img {
+    display: none;
     width: 30vh;
   }
 }
 
 .photo-grid {
+  padding: 2%;
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 40vh;

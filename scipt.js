@@ -21,9 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const imgElement = document.getElementById(image.id);
 
     imgElement.addEventListener("mouseover", () => {
-      imgElement.src = imgElement.src.includes(image.hoverSrc)
-        ? image.originalSrc
-        : image.hoverSrc;
+      imgElement.src = image.hoverSrc;
     });
   });
 });
